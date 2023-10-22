@@ -12,3 +12,5 @@ class Restaurant:
 restaurant = Restaurant('Las delicias de alicia', 'latin')
 print(restaurant.number_served)
 
+restaurant.number_served = 40
+print(restaurant.number_served)
