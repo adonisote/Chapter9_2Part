@@ -28,3 +28,5 @@ class IceCreamStand(Restaurant):
 ice_stand0 = IceCreamStand('Pilatus\'s', 'Ice Cream Stand', ['strawberry', 'chocolate', 'napolitano'])
 
 print(ice_stand0.display_flavors())
+
+
