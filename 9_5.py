@@ -31,11 +31,19 @@ print(instance0.login_attempt)
 class Admin(User):
     def __init__(self, first_name, last_name, age = None, alias = None):
         super().__init__(first_name, last_name, age, alias)
-        self.privileges = ['can add post', 'can delete post', 'can ban user']
+        self.privi = Privileges()
     
+
+
+
+class Privileges:
+    def __init__(self):
+        self.privileges = ['can add post', 'can delete post', 'can ban user']
     def show_privileges(self):
         return self.privileges
 
-admin0 = Admin('Dario', 'Perez')
+admin0 = Admin('Pontious', 'Pilatus')
 admin0.describe_user()
-print(admin0.show_privileges())
+admin0.greet_user()
+
+print(admin0.privi.show_privileges())
